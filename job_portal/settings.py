@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-k7*gfqmyltts^it(dn_=m2=#zjkqx1q@!n4!+3b-xk+%pchu8l
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [".vercel,app"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -96,7 +96,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'job_portal.wsgi.application'
+WSGI_APPLICATION = 'job_portal.wsgi.app'
 AUTH_USER_MODEL = 'firstapp.UserProfile'
 
 # Database
