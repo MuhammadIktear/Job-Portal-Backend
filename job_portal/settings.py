@@ -39,15 +39,6 @@ ALLOWED_HOSTS = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500",
-    "http://localhost:5500",
-    "https://job-portal-backend-opal.vercel.app",
-]
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://job-portal-backend-opal.vercel.app'
-]
 
 
 INSTALLED_APPS = [
@@ -155,8 +146,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
