@@ -1,13 +1,13 @@
 {
-    "builds": [{
-      "src": "job_potal/wsgi.py",
+  "builds": [{
+      "src": "vercel.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.11.3" }
-    }],
-    "routes": [
+  }],
+  "routes": [
       {
-        "src": "/(.*)",
-        "dest": "job_potal/wsgi.py"
+          "src": "/(.*)",
+          "dest": "vercel.py"
       }
-    ]
+  ]
 }

@@ -108,7 +108,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'job_portal.wsgi.app'
+WSGI_APPLICATION = 'job_portal.wsgi.application'
 AUTH_USER_MODEL = 'firstapp.UserProfile'
 
 # Database
