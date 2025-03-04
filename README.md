@@ -1,4 +1,6 @@
-Problem statement and Solution Approach for AI-Powered Job Recruitment & Skill Matching
+Problem statement and Solution Approach for AI-Powered Job Recruitment & Skill Matching:
+
+
 Our core ambition is to automate resume screening, remove hiring bias, predict career growth, and enable smart job matching. We achieve this by extracting skills from both user resumes/CVs and job post descriptions. This allows us to perform job recommendations using cosine similarity, ensuring a more accurate and personalized matching process.
 
 Here's a breakdown of the problems we address and our solution approach:
