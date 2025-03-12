@@ -288,8 +288,6 @@ def job_post_list(request):
                 return Response({'error': 'User profile not found.'}, status=status.HTTP_404_NOT_FOUND)
 
             job_posts = JobPost.objects.filter(user=user_profile)
-        else:
-            job_posts = JobPost.objects.all()
 
         # Apply filters if provided
         country = request.GET.get('country')
