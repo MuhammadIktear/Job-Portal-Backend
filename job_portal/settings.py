@@ -34,8 +34,7 @@ SECRET_KEY = 'django-insecure-k7*gfqmyltts^it(dn_=m2=#zjkqx1q@!n4!+3b-xk+%pchu8l
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "127.0.0.1",
-    ".vercel.app"
+'*'
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
@@ -56,7 +55,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
 ]
 CORS_ALLOW_CREDENTIALS = True
-
+CSRF_TRUSTED_ORIGINS = ['https://fb0b-104-28-208-84.ngrok-free.app']
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', 
     'django.middleware.security.SecurityMiddleware',
