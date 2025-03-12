@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
 ]
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['https://fb0b-104-28-208-84.ngrok-free.app']
+CSRF_TRUSTED_ORIGINS = ['https://job-portal-backend-f1wq.onrender.com']
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', 
     'django.middleware.security.SecurityMiddleware',
