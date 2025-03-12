@@ -41,7 +41,7 @@ class UserRegistrationView(generics.CreateAPIView):
     def send_verification_email(self, user):
         token = default_token_generator.make_token(user)
         uid = urlsafe_base64_encode(force_bytes(user.pk))
-        verification_link = f"http://127.0.0.1:8000/api/verify-email/{uid}/{token}/"
+        verification_link = f"https://job-portal-backend-f1wq.onrender.com/api/verify-email/{uid}/{token}/"
         send_mail(
             subject="Verify Your Email Address",
             message=f"Please click the following link to verify your email: {verification_link}",
@@ -60,7 +60,7 @@ class EmailVerificationView(APIView):
             if user and default_token_generator.check_token(user, token):
                 user.is_active = True  
                 user.save()
-                return redirect('http://127.0.0.1:5500/login.html') 
+                return redirect('https://ai-powered-job-portal.netlify.app/login.html') 
             else:
                 return Response({'error': 'Invalid or expired token'}, status=status.HTTP_400_BAD_REQUEST)
         except (TypeError, ValueError, OverflowError, UserProfile.DoesNotExist) as e:
